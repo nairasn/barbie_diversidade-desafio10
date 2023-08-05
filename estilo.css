@@ -1,0 +1,268 @@
+:root{
+    --cor-site:#EA4899;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+.maxwidth{
+    max-width: auto; /* 90em 1440px; */
+}
+
+.header{
+    width: auto;
+    text-align: center;
+    margin: auto;
+    background-color: #FDE79E;
+}
+
+.header-logo{
+    width: 10em;
+    height: 100%;
+    margin: 1em;
+    
+}
+
+.header-nav{
+    background-color: var(--cor-site);
+}
+
+ul{
+    margin: 0;
+}
+
+.header-nav ul{
+    list-style-type: none;
+    padding: 0;
+    /* text-transform: uppercase; */
+    letter-spacing: .2em;
+    font-size: .8em;
+   
+}
+
+.header-nav a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;   
+}
+
+.header-nav a:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 30%);
+    color: #ffffff;
+    text-decoration: none;
+    display: block; 
+}
+
+
+@media screen and (min-width: 48em){
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo{
+        margin-left: 2em;
+    }
+
+    .header-nav{
+        background-color: initial;
+    }
+
+    .header-nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header-nav li{
+        display: inline-block;
+    }
+
+    .header-nav a{
+        color: var(--cor-site);
+        border-radius: 5px;
+    }
+
+    .header-nav a:hover{
+        color: var(--cor-site);
+        background-color: color-mix(in srgb, var(--cor-site), #ffffff 80%);
+    }
+
+}
+
+
+.trailer{
+    background-color: #e4f2eb;
+    padding: 0 1em 1.5em 1em;
+    line-height: 1.5em;
+}
+
+.trailer div{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.trailer-titulo{
+    margin-top: 0;
+    padding-top: .5em;
+    color: var(--cor-site);
+}
+
+.trailer h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-family:'Dancing Script', cursive;
+}
+
+.trailer-paragrafo{
+    font-size: 1.1em;
+    text-align: justify;
+    /* background-color: color-mix(in srgb, var(--cor-site), #ffffff 90%);
+    padding: 15px;
+    border-radius: 20px; */
+}
+
+.trailer-botao{
+    display: inline-block;
+    padding: 1em 2em;
+    margin-top: 1em;
+    background-color: var(--cor-site);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.trailer-botao:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 30%);
+}
+
+@media screen and (min-width: 48em){
+    .trailer{
+        background-image: url(img/padrao-de-coracao-rosa-claro_53876-67660.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: initial;
+
+        /* background-size: contain;
+        background-repeat: repeat; */
+    }
+
+    .trailer-paragrafo{
+        margin-bottom: 2em;
+    }
+
+    .trailer-botao{
+        display: none;
+    }
+
+    .trailer-video{
+        width: 80%;
+        border-radius: 25px;
+    }
+
+}
+
+@media screen and (max-width: 48em){
+    .trailer-video{
+    display: none !important;
+    }
+}
+
+
+.main-content{
+    background-color: #FEEBF3;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.main-content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.main-content-titulo{
+    color: var(--cor-site);
+    font-family:'Dancing Script', cursive;
+}
+
+/* .main-content-paragrafo{
+    text-align: justify;
+} */
+
+.icon-img{
+    width: 15em;
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+}
+
+.icon-img:hover{
+    transform: scale(1.1);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col{
+    flex: 1 0 auto;
+}
+
+.col-12{
+    width: 100%;
+}
+
+
+.maincontente-botao{
+    display: inline-block;
+    padding: .5em 1em;
+    margin-top: 1em;
+    background-color: var(--cor-site);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.maincontente-botao:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 30%);
+}
+
+
+@media screen and (min-width: 48em){
+    .col-6{
+        width: calc(50% - 2rem);
+    }
+
+    .icon-img{
+        width: 20em;
+    }
+
+}
+
+p{
+    color: #46135f;
+}
+
+.rodape{
+    background-color: #FDE79E;
+    color: var(--cor-site);
+    text-align: center;
+    padding: 1em;
+    font-family:'Dancing Script', cursive;
+}
+
+
+/* 1- mudar fonte : OK
+2- tirar botar trailer e colocar o frame do video: oOKKKKKKK
+3- dar um pouquinho de zoom nos icones: OK
+4-  adicionar botoes dos articles: OK */
